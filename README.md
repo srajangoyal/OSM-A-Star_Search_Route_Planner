@@ -10,7 +10,6 @@ The following project is a part of Udacity’s C++ NanoDegree program. The aim o
 <img src="map.png" width="600" height="450" />
 
 ## Project Workflow
----
 
 * Data parsing from OpenStreetMap file (.OSM xml file)
 * The user inputs two points on the map and initial and final points
