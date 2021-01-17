@@ -1,18 +1,35 @@
 # Route Planning Project
 
-This repo contains the starter code for the Route Planning project.
+[![Udacity - C++ NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213)
+
+The following project is a part of Udacity’s C++ NanoDegree program. The aim of project is to successfully find the shortest path between two points on the map.
+
+* Map data from OSM XML file is parsed and the optimal path is plotted using IO2D Library in C++;
+* Used GoogleTest Framework for unit testing.
 
 <img src="map.png" width="600" height="450" />
+
+## Project Workflow
+
+* Data parsing from OpenStreetMap file (.OSM xml file)
+* The user inputs two points on the map and initial and final points
+* Route planner is executed
+  * Based on the points input by the user, the closest initial and final nodes are found.
+  * A list of feasible open nodes is updated.
+  * Based on a heuristic value and the distance from the start node, next node is popped.
+  * From the popped node, the open list is again updated.
+* The process is repeated till either the next node is the goal, or the open list is exhausted.
+* The path is returned and plotted used IO2D library.
 
 ## Cloning
 
 When cloning this project, be sure to use the `--recurse-submodules` flag. Using HTTPS:
 ```
-git clone https://github.com/udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone https://github.com/srajangoyal/OSM-A-Star_Search_Route_Planner.git --recurse-submodules
 ```
 or with SSH:
 ```
-git clone git@github.com:udacity/CppND-Route-Planning-Project.git --recurse-submodules
+git clone git@github.com:srajangoyal/OSM-A-Star_Search_Route_Planner.git --recurse-submodules
 ```
 
 ## Dependencies for Running Locally
