@@ -2,7 +2,9 @@
 
 [![Udacity - C++ NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213)
 
-The following project is a part of Udacity’s C++ NanoDegree program. The aim of project is to successfully find the shortest path between two points on the map.
+The following project is a part of Udacity’s C++ NanoDegree program.
+
+A* Search algorithm to successfully the shortest path between two points on the map based on a heuristic function.
 
 * Map data from OSM XML file is parsed and the optimal path is plotted using IO2D Library in C++;
 * Used GoogleTest Framework for unit testing.
@@ -11,10 +13,10 @@ The following project is a part of Udacity’s C++ NanoDegree program. The aim o
 
 ## Project Workflow
 
-* Data parsing from OpenStreetMap file (.OSM xml file)
-* The user inputs two points on the map and initial and final points
+* Data parsing from OpenStreetMap file
+* User inputs initial and final points
 * Route planner is executed
-  * Based on the points input by the user, the closest initial and final nodes are found.
+  * Based on input points, the closest initial and final nodes are found.
   * A list of feasible open nodes is updated.
   * Based on a heuristic value and the distance from the start node, next node is popped.
   * From the popped node, the open list is again updated.
