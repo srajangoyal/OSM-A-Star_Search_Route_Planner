@@ -4,7 +4,7 @@
 
 The following project is a part of Udacity’s C++ NanoDegree program.
 
-A* Search algorithm to successfully the shortest path between two points on the map based on a heuristic function.
+A* Search algorithm to successfully find the shortest path between two points on the map based on a heuristic function.
 
 * Map data from OSM XML file is parsed and the optimal path is plotted using IO2D Library in C++;
 * Used GoogleTest Framework for unit testing.
